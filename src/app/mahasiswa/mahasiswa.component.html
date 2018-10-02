@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         
-      <div class="col">
+      <div class="col-md-6 ">
           <h2>FORM DATA MAHASISWA</h2>
           <hr>
         <label for="nim">NIM :</label>
@@ -14,20 +14,22 @@
       <button type="button" class="btn btn-primary" (click)="tambahMhs()">Tambah Mahasiswa</button>
       </div>
 
-      <div class="col">
+      <div class="col-md-6">
           <h2>DATA MAHASISWA</h2>
+          <hr>
       <div class="card"  *ngFor="let mhs of daftarMhs">
         <img class="card-img-top" src="" alt="">
         <div class="card-header">
             <h4 class="card-title">{{ mhs.nama }}</h4>
           </div>
         <div class="card-body">
-         
           <p class="card-text"> {{ mhs.nim }} </p>
           <p class="card-text"> {{ mhs.kelas }} </p>
         </div>
       </div>
       </div>
+      <br/>
+      <br/>
      
     </div>
     
