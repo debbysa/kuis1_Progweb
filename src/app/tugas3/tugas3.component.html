@@ -1,0 +1,15 @@
+<p>
+  tugas3 works!
+</p>
+
+<button 
+  class="btn btn-primary" 
+  (click)="onClickMe()">
+  Tampilkan Detail
+</button>
+
+  <p *ngIf="i % 2 != 0">{{kalimat}}</p>
+  <p *ngFor = "let i of log;" 
+  [ngStyle]="{backgroundColor: i >= 5 ? 'purple':'transparent' }"
+  [ngClass]="{up: i >= 5 }"> {{i}} 
+  </p>
